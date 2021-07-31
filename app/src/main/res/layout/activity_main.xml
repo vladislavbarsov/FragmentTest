@@ -26,15 +26,29 @@
         app:layout_constraintStart_toEndOf="@+id/btnFragment1"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment
-        android:id="@+id/fragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFragment1" />
+<!--    Staticaly add a Fragment-->
 
+<!--    <fragment-->
+<!--        android:name="com.example.fragmenttest.FirstFragment"-->
+<!--        android:id="@+id/fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnFragment1" />-->
+
+<!--    Better way of adding a fragment-->
+
+        <FrameLayout
+            android:id="@+id/flFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFragment1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
